@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Attendance Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>📚 Student Attendance Tracker</h1>
+
+  <section class="form-section">
+    <h2>Add Student</h2>
+    <form id="studentForm">
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="text" id="rollNo" placeholder="Roll Number" required />
+      <input type="text" id="className" placeholder="Class" required />
+      <button type="submit">Add Student</button>
+    </form>
+  </section>
+
+  <section class="list-section">
+    <h2>Mark Attendance (Today)</h2>
+    <button onclick="fetchStudents()">Refresh Student List</button>
+    <form id="attendanceForm">
+      <div id="studentsList"></div>
+      <button type="submit">Mark Attendance</button>
+    </form>
+  </section>
+
+  <p id="message"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
