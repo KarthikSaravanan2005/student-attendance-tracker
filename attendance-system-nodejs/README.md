@@ -160,3 +160,4 @@ method: "DELETE"
 url: "/user/:userId"
 ```
 
+credit : sahilkashyap64
